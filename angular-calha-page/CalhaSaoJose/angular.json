@@ -3,30 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-calha-page": {
+    "CalhaSaoJose": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss",
-          "skipTests": true
-        },
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
-        "@schematics/angular:directive": {
-          "skipTests": true
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:interceptor": {
-          "skipTests": true
-        },
-        "@schematics/angular:pipe": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
+          "style": "scss"
         },
         "@schematics/angular:application": {
           "strict": true
@@ -39,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-calha-page",
+            "outputPath": "dist/CalhaSaoJose",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,10 +31,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/primeflex/primeflex.css",
-              "node_modules/primeng/resources/themes/saga-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeicons/primeicons.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -95,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-calha-page:build:production"
+              "browserTarget": "CalhaSaoJose:build:production"
             },
             "development": {
-              "browserTarget": "angular-calha-page:build:development"
+              "browserTarget": "CalhaSaoJose:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-calha-page:build"
+            "browserTarget": "CalhaSaoJose:build"
           }
         },
         "test": {
@@ -130,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "angular-calha-page"
+  "defaultProject": "CalhaSaoJose"
 }
