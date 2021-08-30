@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+$background-color: #252525 !important;
+$Font-color: #fff !important;
+
+.ui-card{
+    background: $background-color;
+    color: $Font-color;
+}
